@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>B. Marban - Contact Me</title>
+    <meta charset = "utf-8" />
+    <meta name="viewport" content="=width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles_shared.css">
+    <link rel="stylesheet" href="css/styles_resume.css">
+    <script src="js/transitions.js"></script>
+    <script src="js/validation.js"></script>
+
+</head>
+
+<body id="body"> 
+    <header class="grid_navigation">
+        <nav class="nav_left">
+            <a href="index.html">Home</a>
+            <a href="about_me.html">About Me</a>
+            <a href="travel.html">Travel</a>
+        </nav>
+        <div class="title_center">B. Marban</div>
+        <nav class="nav_right">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a class="current" href="contact_me.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <form name="myForm" id="form"  onsubmit="return validateForm();">
+            <h1>To get in contact with me please fill in the form and I will get back to you as soon as possible:</h1>
+            
+            <p>Enter your first name: 
+            <input type="text" name="firstName" id="firstName" required> *
+            </p>
+    
+            <p>Enter your last name: 
+                <input type="text" name="lastName" id="lastName" required> *
+            </p>
+
+            <p>Enter your email: 
+                <input type="text" name="email" id="email" required> *
+            </p>
+    
+            <p>Your message:</p>
+            <p><textarea rows="7" cols ="50" name="message"></textarea></p>
+    
+            <span id="error"></span>
+    
+            <p>
+            <input type="submit" name="submitButton" value="Submit">
+            <input type="reset" name="resetButton" value="Reset">
+            </p>
+        </form>
+    </main>
+
+    <footer class="socials">
+        <a class ="social1" href="https://www.linkedin.com/in/barbaramarban/" target="_blank"><img src="images/linkedin.png" alt="linkedin logo"></a>
+        <a class ="social2" href="https://www.facebook.com/barbaramarban" target="_blank"><img src="images/facebook.png" alt="facebook logo"></a>
+        <a class ="social3" href="https://www.instagram.com/barbaramarban/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram logo"></a>
+    </footer>
+
+    
+</body>
+</html>
