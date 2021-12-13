@@ -1,0 +1,187 @@
+html {
+    font-family:  "didot", sans-serif, Garamond, Verdana, Arial, Helvetica;  
+    color: rgb(0, 0, 0); 
+    
+    background-repeat:no-repeat; 
+    background-position:center; 
+    background-size: cover;
+    height: 100%;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    opacity: 0;
+}
+
+img {
+    border-radius: 5%;
+}
+
+ul {
+    border-top: 0.15rem solid rgb(255, 255, 255);
+    border-bottom: 0.15rem solid rgb(255, 255, 255);
+    padding: 1vw;
+
+}
+
+li {
+    display: inline;
+    
+}
+
+nav {
+    text-align: center;
+}
+
+header{
+    font-size: 2vw;
+}
+
+h1{
+    font-size: 2.5vw;
+}
+
+h2{
+    font-size: 2.5vw;
+}
+
+h3{
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+p{
+    font-size: 2vw;  
+}
+
+a{
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+    text-decoration: none;
+    padding: 1vw;
+}
+
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #be6474;
+}
+
+.current{
+    color: #be6474;
+    text-decoration: none;
+}
+
+
+/* Grid box navigation */
+
+.grid_navigation{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 30% 40% 30%;
+    border-top: 25px;
+    margin: 2.3rem;
+}
+
+.nav_left {
+    grid-column: 1 / 2;
+    border-top: 0.1rem solid #252626;
+    border-bottom: 0.1rem solid #252626;
+    text-align: center;
+}
+
+.title_center {
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.nav_right {
+    grid-column: 3 / 4;
+    border-top: 0.1rem solid #252626;
+    border-bottom: 0.1rem solid #252626;
+    text-align: center;
+}
+
+/* Grid box footer */
+
+.socials {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(9, 11%);
+    text-align: center;
+    margin: 5% 15%;
+    padding: 10%;
+    grid-template-areas:
+        ". . . social1 social2 social3 . . . ";
+}
+
+.social1 {
+    grid-area: social1;
+}
+.social2 {
+    grid-area: social2;
+}
+.social3 {
+    grid-area: social3;
+}
+
+footer > a:hover {
+    color: #ffffff00;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+footer > a > img {
+    height: 3.5vw;
+}
+
+/* Flex box */ 
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.flex > img  {
+    border-radius: 5%;
+    height: 40vh;
+    padding: 1%;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery > .flex {
+    justify-content: center;
+    
+}
+
+.gallery > a {
+    font-size: 10vh;
+}
+
+.gallery > header > a:hover {
+    color: #be6474;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Form */
+
+form {
+    margin: 5% 15%;
+}

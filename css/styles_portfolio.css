@@ -1,0 +1,52 @@
+
+main {
+    margin: 0% 15%;
+}
+
+h2 {
+    margin: 10% 0% 0%
+}
+
+.portfolio_button {
+    color: rgb(0, 0, 0);
+    background-color: #dfd158;
+    border-radius: 20%;
+}
+
+.portfolio_button:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #6564be;
+}
+
+/* Grid box footer */
+
+.socials {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+    text-align: center;
+    margin: 5% 15%;
+    grid-template-areas:
+        ". . . social1 social2 social3 . . . ";
+}
+
+.social1 {
+    grid-area: social1;
+}
+.social2 {
+    grid-area: social2;
+}
+.social3 {
+    grid-area: social3;
+}
+
+footer > a:hover {
+    color: #ffffff00;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+footer > a > img {
+    height: 3.5vw;
+}

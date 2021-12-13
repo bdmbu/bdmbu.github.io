@@ -1,0 +1,68 @@
+h1 {
+    font-size: 2.5vw;
+    color: #be6474;
+    margin: 14% 0% 8% 0%;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+h4 {
+    background-color: #be647485;
+    border-radius: 10%;
+    font-size: 1.5vw;
+    margin: 3%;
+    padding: 2%;
+
+}
+
+.right{
+    float:right;
+}
+
+.file {
+    color: #6564be;
+    font-size: 2.5vw;
+}
+
+.file:hover {
+    color: #dfd158;
+    background-color: #ffffff00;    
+}
+
+/* Grid box main holding*/ 
+
+.holding {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2, auto);
+    text-align: left;
+    margin: 5% 15%;
+    grid-template-areas:
+        "central side"
+        "download download";
+}
+
+.side {
+    grid-area: side;
+    align-self: center;
+}
+
+.central {
+    grid-area: central;
+    margin: 0% 20% 0% 0%;
+}
+
+.download {
+    grid-area: download;
+    text-align: center;
+    margin: 10% 0% 0% 0%;
+
+}

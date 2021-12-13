@@ -1,0 +1,86 @@
+html {
+    font-family:  "didot", sans-serif, Garamond, Verdana, Arial, Helvetica;  
+    color: rgb(255, 255, 255);  
+
+    background-image:
+        /* gradient over image */
+    linear-gradient(
+        rgba(133, 133, 133, 0.5), 
+        rgba(133, 133, 133, 0.5)
+      ),
+      /*image */
+      url(/images/background_index.jpg); 
+
+    background-repeat:no-repeat; 
+    background-position:center; 
+    background-size: cover;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    opacity: 0;
+}
+
+ul {
+    border-top: 0.15rem solid rgb(255, 255, 255);
+    border-bottom: 0.15rem solid rgb(255, 255, 255);
+    padding: 1vw;
+}
+
+li {
+    display: inline;  
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4vw;
+}
+
+h1{
+    font-size: 10vw;
+    margin: 0vw;
+}
+
+h2{
+    font-size: 1.8vw;  
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 0% 0.5vw;
+}
+
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #be6474;
+}
+
+.gallery {
+    border-radius: 50%;
+    color: antiquewhite;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.5657894736842105) 0%, rgba(104,104,105,0.57) 100%);}
