@@ -6,12 +6,6 @@ html {
     background-position:center; 
     background-size: cover;
     height: 100%;
-
-    animation-name: fadeIn;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
